@@ -206,7 +206,7 @@ Requirements list:
 - zict==0.1.3
 ## Usage
 ### Data Preparation
-[Github repo of - planetoid](https://github.com/kimiyoung/planetoid/tree/master/data) (Zhilin Yang, William W. - Cohen, Ruslan Salakhutdinov, [Revisiting Semi-Supervised Learning with Graph Embeddings]- (https://arxiv.org/abs/1603.08861), ICML 2016) provided a preprocessed Cora dataset and a fixed splitting. After downloading the Cora dataset, put it - under path `$data_root/$citation_root`, where `$data_root` and `$citation_root` is configured - in `config/config.yaml`. Make sure to edit these two properties of configuration before - running the code.
+[Github repo of - planetoid](https://github.com/kimiyoung/planetoid/tree/master/data) (Zhilin Yang, William W. - Cohen, Ruslan Salakhutdinov, [Revisiting Semi-Supervised Learning with Graph Embeddings](https://arxiv.org/abs/1603.08861), ICML 2016) provided a preprocessed Cora dataset and a fixed splitting. After downloading the Cora dataset, put it - under path `$data_root/$citation_root`, where `$data_root` and `$citation_root` is configured - in `config/config.yaml`. Make sure to edit these two properties of configuration before - running the code.
 - ### Train and Test Model
 You can run the model by the following command:
 ```shell
