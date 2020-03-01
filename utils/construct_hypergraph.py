@@ -98,19 +98,18 @@ def construct_H_with_KNN_from_distance(dis_mat, k_neig, is_probH=False, m_prob=1
     return H
 
 
-def _edge_list_to_H(edge_list):
+def _edge_dict_to_H(edge_dict):
     """
     calculate H from edge_list
-    :param edge_list: edge_list[i] = adjacent indices of index i
+    :param edge_dict: edge_list[i] = adjacent indices of index i
     :return: H, (n_nodes, n_nodes) numpy ndarray
     """
-    n_nodes = len(edge_list)
+    n_nodes = len(edge_dict)
     H = np.zeros(shape=(n_nodes, n_nodes))
-    for edge in edge_list:
-        H[edge[0], edge[1]] = 1.0
-        H[edge[0], edge[1]] = 1.0
-    for node in range(n_nodes):
-        H[node, node] = 1.0
+    for center_id, adj_list in enumerate(edge_dict):
+        H[center_id, center_id] = 1.0
+        for adj_id in adj_list:
+            H[adj_id, center_id] = 1.0
     return H
 
 

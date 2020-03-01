@@ -20,7 +20,7 @@ import sklearn
 from sklearn import neighbors
 import numpy as np
 
-from utils.construct_hypergraph import _edge_list_to_H, _generate_G_from_H
+from utils.construct_hypergraph import _edge_dict_to_H, _generate_G_from_H
 
 
 def setup_seed(seed):
@@ -194,9 +194,9 @@ def train_test_model(cfg):
 
     source = source_select(cfg)
     print(f'Using {cfg["activate_dataset"]} dataset')
-    fts, lbls, idx_train, idx_val, idx_test, n_category, node_dict, edge_dict = source(cfg)
+    fts, lbls, idx_train, idx_val, idx_test, n_category, _, edge_dict = source(cfg)
 
-    H = _edge_list_to_H(edge_dict)
+    H = _edge_dict_to_H(edge_dict)
     G = _generate_G_from_H(H)
 
     G = torch.Tensor(G).cuda()
