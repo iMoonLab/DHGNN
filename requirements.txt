@@ -113,7 +113,7 @@ pkginfo==1.4.2
 pluggy==0.6.0
 ply==3.11
 prompt-toolkit==1.0.15
-psutil==5.4.5
+psutil==5.6.6
 ptyprocess==0.5.2
 py==1.5.3
 pycodestyle==2.4.0
