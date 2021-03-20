@@ -60,7 +60,7 @@ itsdangerous==0.24
 jdcal==1.4
 jedi==0.12.0
 jieba==0.39
-Jinja2==2.10
+Jinja2==2.11.3
 jsonschema==2.6.0
 jupyter==1.0.0
 jupyter-client==5.2.3
