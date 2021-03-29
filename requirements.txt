@@ -122,7 +122,7 @@ pycparser==2.18
 pycrypto==2.6.1
 pycurl==7.43.0.1
 pyflakes==1.6.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.8.4
 pyodbc==4.0.23
 pyOpenSSL==18.0.0
