@@ -32,7 +32,7 @@ cytoolz==0.9.0.1
 dask==0.17.5
 datashape==0.5.4
 decorator==4.3.0
-distributed==1.21.8
+distributed==2021.10.0
 docutils==0.14
 entrypoints==0.2.3
 et-xmlfile==1.0.1
